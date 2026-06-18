@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: grid;
+
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 300px 300px 1fr;
+
+    grid-template-areas:
+        "left-menu header right-menu"
+        "left-menu profiru right-menu"
+        "left-menu post right-menu";
+
+}
+
+.left{
+    grid-area: left-menu;
+    border: 1px solid rgb(72, 72, 72);
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    border: 1px solid rgb(72, 72, 72);
+    background-color: #eeff00;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.right{
+    grid-area: right-menu;
+    border: 1px solid rgb(72, 72, 72);
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.profiru{
+    grid-area: profiru;
+    position: relative;
+
+    border: 1px solid rgb(72, 72, 72);
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+.icon{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: -100px;
+    left: 50px;
+}
+
+.post{
+    grid-area: post;
+    border: 1px solid rgb(72, 72, 72);
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
